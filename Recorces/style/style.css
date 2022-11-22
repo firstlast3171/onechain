@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    scroll-behavior: smooth;
+    background: rgba(0, 0, 0, 0.872);
+}
+.header-main{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+   
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    background: rgb(7, 7, 7);
+    padding: 10px;
+}
+
+.logo{
+    color: white;
+}
+.logo span{
+    color: gold;
+}
+.categories ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.categories ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: 0.8s all;
+}
+.categories ul li:hover a{
+    color: gold;
+  
+}
+.categories ul li:hover{
+    transform: translateY(-3px)
+}
+
+.ad-one{
+    grid-area: oneAd;
+    height: fit-content;
+    width: 200px;
+}
+.ad-two{
+    grid-area: twoAd;
+    height: fit-content;
+}
+.ad-three{
+    grid-area: threeAd;
+}
+.main{
+    grid-area: main;
+    height: fit-content;
+    border: solid 1px gold;
+    padding: 5px;
+}
+.main .num{
+    margin: 60px auto;
+    text-align: center;
+}
+.main .num h1 span{
+    color: gold;
+}
+.content{
+    display: grid;
+    grid-template-areas: 'oneAd main main main main twoAd';
+    grid: 20px;
+}
+.content > div{
+ margin: 150px auto;
+   width: 100%;
+   /* border: solid gold 1px; */
+}
+.num h1{
+    color: white;
+}
+.choosed{
+    background: linear-gradient(90deg,blue,red,green,gold);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
+    font-weight: 900;
+    animation: moving 5s linear infinite;
+    font-size: 4rem;
+}
+@keyframes moving {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+.ad-banner{
+    height: 100%;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 300px;
+    padding: 10px;
+}
+.ad-banner p{
+    text-align: justify;
+}
+.best-choice p{
+    color: white;
+}
+.footer{
+    width: 100%;
+    background:   rgb(7, 7, 7);
+    color: white;
+}
+.footer-inbox{
+    display: flex;
+   padding: 10px;
+   padding-bottom: 20px;
+    justify-content: space-around;
+}
+.footer-inbox ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.footer span{
+    color: gold;
+}
+.footer-inbox a{
+    color: gold;
+}
+
